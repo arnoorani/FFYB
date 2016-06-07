@@ -2,6 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>info</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Scan a barcode to add to Favourites</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>ffyb.ScanQrCode</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Scan A QR Code</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>info.png</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>My FFB Ticket</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>My Ticket</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>ffyb.MyTicket</string>
+		</dict>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>FFYBAPP</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-Semibold.ttf</string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -18,10 +50,35 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.ffyb.OAuth2-ObjC</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ffyb</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>ffyb</string>
+		<string>wealthdynamics</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to determine your City</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

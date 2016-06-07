@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+#import "Keys.h"
+#import "CustomIOSAlertView.h"
+@class DiscoverViewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate,CustomIOSAlertViewDelegate>
+@property CGFloat PreviousScreen;
 @property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) DiscoverViewController *myViewController;
 
 
 @end
